@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<item android:id="@+id/home2_menue_home" android:title="Home" />
+    <item android:id="@+id/home2_menue_order" android:title="Order" />
+
+    <item android:id="@+id/home2_menue_Mnue" android:title="Menue" />
+
+    <item android:id="@+id/home2_menue_restaurant" android:title="Restaurant" />
+
+    <item android:id="@+id/home2_menue_favorites" android:title="Favorites" />
+
+    <item android:id="@+id/home2_menue_myCard" android:title="My Card" />
+
+    <item android:id="@+id/home2_menue_myAccount" android:title="My Account" />
+
+
+    <item android:id="@+id/home2_menue_aboutUs" android:title="About Us" />
+    <item android:id="@+id/home2_menue_contactUS" android:title="Contact US" />
+    <item android:id="@+id/home2_menue_Terms_and_conditions" android:title=" Terms and conditions"
+        />
+</menu>

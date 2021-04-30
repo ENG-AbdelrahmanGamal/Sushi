@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:scaleType="fitXY"
+    android:id="@+id/sign_imageview_home"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:src="@drawable/_000_f_224021328_v_ms_5_mw_hbr_5_k_o_bzexn_mtt_dn_2_rz_uxfnt_9_y"
+    />
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            app:layout_constraintTop_toTopOf="@+id/sign_imageview_home"
+            app:layout_constraintEnd_toEndOf="@+id/sign_imageview_home"
+            android:src="@drawable/layer_2"
+
+
+            app:layout_constraintStart_toStartOf="@+id/sign_imageview_home"
+            app:layout_constraintBottom_toBottomOf="@+id/sign_imageview_home"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:scaleType="centerCrop"
+            android:id="@+id/sign_imageview_sushi"
+            app:layout_constraintTop_toBottomOf="@+id/sign_imageview_home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/_0170418_lays_074_1"/>
+<com.google.android.material.button.MaterialButton
+    android:layout_width="match_parent"
+    android:id="@+id/sign_Button_sign"
+    android:layout_height="wrap_content"
+    android:text="@string/sign_in_now"
+    app:backgroundTint="@color/apphomedark"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/sign_imageview_sushi"
+    android:textSize="@dimen/_22ssp"
+    android:layout_marginStart="@dimen/_25sdp"
+    android:layout_marginEnd="@dimen/_25sdp"
+    android:background="@drawable/button_cornar"
+    app:layout_constraintEnd_toEndOf="parent"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:id="@+id/sign_Button_register"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_Button_sign"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:textSize="@dimen/_22ssp"
+            android:background="@drawable/button_cornar"
+            app:backgroundTint="#fff"
+            android:textColor="@color/apphomelight"
+            app:layout_constraintEnd_toEndOf="parent"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:text="Terms and Conditions"
+    android:gravity="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:paddingBottom="@dimen/_5sdp"
+    />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
