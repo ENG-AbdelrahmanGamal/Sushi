@@ -2,8 +2,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
-
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -100,7 +98,6 @@
         <com.google.android.material.navigation.NavigationView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -110,12 +107,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-
                 android:src="@drawable/ic_lock_24" />
 
         </com.google.android.material.navigation.NavigationView>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <data>
