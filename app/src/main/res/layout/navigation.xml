@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="match_parent"
+    android:background="@color/apphomelight"
+    android:padding="@dimen/_16sdp"
+    android:layout_gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_margin="@dimen/_12sdp"
+        app:menu="@menu/optinal_menue"
+        android:orientation="vertical"
+
+
+        >
+<com.google.android.material.navigation.NavigationView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:menu="@menu/optinal_menue"
+    />
+<!--        <include-->
+<!--            layout="@layout/activity_toolsbar"-->
+<!--            />-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="@dimen/_120sdp"
+            android:onClick="clickLogo"
+            android:src="@drawable/artboard_1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android code "
+            android:textSize="@dimen/_26ssp"
+            android:textColor="@color/apphomedark"
+            android:textStyle="bold"
+            android:textAlignment="center"
+
+            />
+<View
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/_16sdp"
+    android:layout_marginBottom="@dimen/_16sdp"
+    android:background="@color/apphomedark"
+    android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="clickHome"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home "
+                android:textSize="@dimen/_26ssp"
+                android:textColor="@color/apphomedark"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="clickHome"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dath"
+                android:textSize="@dimen/_26ssp"
+                android:textColor="@color/apphomedark"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

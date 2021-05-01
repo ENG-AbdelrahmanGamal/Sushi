@@ -7,109 +7,111 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:context=".Home2">
+        tools:context=".Home2"
+        android:fitsSystemWindows="true"
+        android:id="@+id/navigation_header_container"
+        >
 
-        <ImageView
-            android:id="@+id/home2_image_header"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_200sdp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/layer_10"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-        <!--        <ImageView-->
-        <!--            android:id="@+id/home2_imageall"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:scaleType="fitXY"-->
-        <!--            android:src="@drawable/artboard_5"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintHorizontal_bias="1.0"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toTopOf="parent" />-->
-        <ImageView
-            android:id="@+id/home2_image_menue"
-            android:layout_width="50dp"
-            android:layout_height="95dp"
-            android:layout_marginStart="16dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_menu_2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/home2_cardview1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@id/home2_cardview2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home2_image_header">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_150sdp"
-                    android:src="@drawable/getoffer1" />
-
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_150sdp"
-                    android:src="@drawable/getoffer2" />
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/home2_cardview2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_20ssp"
-            android:padding="@dimen/_20ssp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home2_cardview1">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_150sdp"
-                    android:src="@drawable/getoffer1" />
-
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_150sdp"
-                    android:src="@drawable/getoffer2" />
-
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.navigation.NavigationView
-            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:menu="@menu/optinal_menue">
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent">
 
-            <androidx.constraintlayout.utils.widget.ImageFilterView
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/home2_image_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/layer_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/home2_image_menue"
+                android:layout_width="50dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/group_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                android:src="@drawable/ic_lock_24" />
+                android:gravity="center"
+                android:text="Home "
+                android:textColor="@color/apphomedark"
+                android:textStyle="bold" />
 
-        </com.google.android.material.navigation.NavigationView>
+            <include layout="@layout/activity_toolsbar" />
+
+
+            <!--        <com.google.android.material.card.MaterialCardView-->
+            <!--            android:id="@+id/home2_cardview1"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            app:layout_constraintBottom_toTopOf="@id/home2_cardview2"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/home2_image_header">-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="@dimen/_150sdp"-->
+            <!--                    android:layout_height="@dimen/_150sdp"-->
+            <!--                    android:src="@drawable/getoffer1" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="@dimen/_150sdp"-->
+            <!--                    android:layout_height="@dimen/_150sdp"-->
+            <!--                    android:src="@drawable/getoffer2" />-->
+            <!--            </LinearLayout>-->
+            <!--        </com.google.android.material.card.MaterialCardView>-->
+
+            <!--        <com.google.android.material.card.MaterialCardView-->
+            <!--            android:id="@+id/home2_cardview2"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_margin="@dimen/_20ssp"-->
+            <!--            android:padding="@dimen/_20ssp"-->
+            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/home2_cardview1">-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="@dimen/_150sdp"-->
+            <!--                    android:layout_height="@dimen/_150sdp"-->
+            <!--                    android:src="@drawable/getoffer1" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="@dimen/_150sdp"-->
+            <!--                    android:layout_height="@dimen/_150sdp"-->
+            <!--                    android:src="@drawable/getoffer2" />-->
+
+            <!--            </LinearLayout>-->
+            <!--        </com.google.android.material.card.MaterialCardView>-->
+
+        </LinearLayout>
+
+<include
+    layout="@layout/navigation"
+    />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <data>

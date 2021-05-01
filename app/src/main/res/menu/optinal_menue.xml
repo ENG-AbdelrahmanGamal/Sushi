@@ -1,22 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    >
-<item android:id="@+id/home2_menue_home" android:title="Home" />
-    <item android:id="@+id/home2_menue_order" android:title="Order" />
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ShowIn="navigation_view">
+    <group>
+        <item android:id="@+id/home2_menue_home" android:title="Home"
+android:onClick="openHome"
+            android:icon="@drawable/ic_menu_2"/>
+        <item android:id="@+id/home2_menue_order" android:title="Order"
+            android:onClick="openOrder"
 
-    <item android:id="@+id/home2_menue_Mnue" android:title="Menue" />
+            android:icon="@drawable/ic_order" />
 
-    <item android:id="@+id/home2_menue_restaurant" android:title="Restaurant" />
+        <item android:id="@+id/home2_menue_Mnue" android:title="Menue"
+            android:onClick="openMenue"
 
-    <item android:id="@+id/home2_menue_favorites" android:title="Favorites" />
+            android:icon="@drawable/ic_more"/>
+        android:onClick="openRest"
 
-    <item android:id="@+id/home2_menue_myCard" android:title="My Card" />
+        <item android:id="@+id/home2_menue_restaurant" android:title="Restaurant"
+            android:icon="@drawable/ic_rest"/>
 
-    <item android:id="@+id/home2_menue_myAccount" android:title="My Account" />
+        <item android:id="@+id/home2_menue_favorites"
+            android:title="Favorites"
+            android:onClick="openFavorites"
+
+            android:icon="@drawable/ic_favorite"/>
 
 
+        <item android:id="@+id/home2_menue_myCard" android:title="My Card"
+            android:onClick="openMyCard"
+
+            />
+
+        <item android:id="@+id/home2_menue_myAccount"
+            android:title="My Account"
+            android:onClick="openhome"
+
+            />
+    </group>
+<item android:title="comunicate">
+<menu>
     <item android:id="@+id/home2_menue_aboutUs" android:title="About Us" />
     <item android:id="@+id/home2_menue_contactUS" android:title="Contact US" />
     <item android:id="@+id/home2_menue_Terms_and_conditions" android:title=" Terms and conditions"
         />
+</menu>
+
+
+</item>
+
+
 </menu>
