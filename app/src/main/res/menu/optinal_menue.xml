@@ -1,49 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:ShowIn="navigation_view">
-    <group>
-        <item android:id="@+id/home2_menue_home" android:title="Home"
-android:onClick="openHome"
-            android:icon="@drawable/ic_menu_2"/>
-        <item android:id="@+id/home2_menue_order" android:title="Order"
-            android:onClick="openOrder"
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home2_menue_home"
+            android:title="Home"
+            android:icon="@drawable/ic_house"/>
+        <item android:id="@+id/home2_menue_order"
+            android:title="Order"
+            android:icon="@drawable/ic_order"
+            />
 
-            android:icon="@drawable/ic_order" />
+        <item android:id="@+id/home2_menue_Mnue"
+            android:title="Menue"
+            android:icon="@drawable/ic_home"/>
 
-        <item android:id="@+id/home2_menue_Mnue" android:title="Menue"
-            android:onClick="openMenue"
-
-            android:icon="@drawable/ic_more"/>
-        android:onClick="openRest"
-
-        <item android:id="@+id/home2_menue_restaurant" android:title="Restaurant"
+        <item android:id="@+id/home2_menue_restaurant"
+            android:title="Restaurant"
             android:icon="@drawable/ic_rest"/>
 
         <item android:id="@+id/home2_menue_favorites"
             android:title="Favorites"
-            android:onClick="openFavorites"
-
             android:icon="@drawable/ic_favorite"/>
 
 
-        <item android:id="@+id/home2_menue_myCard" android:title="My Card"
-            android:onClick="openMyCard"
+        <item android:id="@+id/home2_menue_myCard"
+            android:title="My Card"
+            android:icon="@drawable/ic_my_card"
 
             />
 
         <item android:id="@+id/home2_menue_myAccount"
             android:title="My Account"
-            android:onClick="openhome"
+            android:icon="@drawable/ic_my_account"
 
             />
     </group>
-<item android:title="comunicate">
+<item android:title="communicate">
 <menu>
-    <item android:id="@+id/home2_menue_aboutUs" android:title="About Us" />
-    <item android:id="@+id/home2_menue_contactUS" android:title="Contact US" />
-    <item android:id="@+id/home2_menue_Terms_and_conditions" android:title=" Terms and conditions"
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/home2_menue_aboutUs"
+        android:title="About Us"
+        android:icon="@drawable/ic_baseline_accessibility_24"/>
+    <item android:id="@+id/home2_menue_contactUS"
+        android:title="Contact US"
+        android:icon="@drawable/ic_connect_without_contact"/>
+    <item android:id="@+id/home2_menue_Terms_and_conditions"
+        android:title=" Terms and conditions"
+
         />
+    </group>
 </menu>
 
 

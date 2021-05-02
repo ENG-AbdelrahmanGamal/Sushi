@@ -9,10 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sushi">
-        <activity
-            android:name=".NavigationDrawer"
-            android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/Theme.Sushi.NoActionBar"></activity>
+        <activity android:name=".TermsAndConditions"></activity>
+        <activity android:name=".ContactsUs" />
+        <activity android:name=".AboutUS" />
+        <activity android:name=".MyAccount" />
+        <activity android:name=".MyCard" />
+        <activity android:name=".Favorites" />
+        <activity android:name=".Restaurant" />
+        <activity android:name=".Menue" />
+        <activity android:name=".Order" />
+        <activity android:name=".Home3" />
         <activity android:name=".Home2" />
         <activity android:name=".Register" />
         <activity android:name=".SignIn" />
