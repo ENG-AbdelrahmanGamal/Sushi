@@ -20,7 +20,14 @@
             app:headerLayout="@layout/header"
             app:menu="@menu/optinal_menue"
             android:layout_gravity="start"
-            />
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                tools:listitem="@layout/example_item" />
+        </com.google.android.material.navigation.NavigationView>
 
 
 
@@ -34,20 +41,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?actionBarSize"
-        app:navigationIcon="@drawable/ic_menu_2"
+        app:navigationIcon="@drawable/ic_baseline_menu_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="#fff"
+        android:background="@color/apphomedark"
         app:layout_constraintTop_toTopOf="parent"
 
         />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:scaleType="fitXY"
+app:layout_constraintTop_toBottomOf="@id/toolsbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/home2_image_header"
+        android:src="@drawable/selective"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.drawerlayout.widget.DrawerLayout>
 
-
     <data>
-
+String items;
     </data>
 </layout>

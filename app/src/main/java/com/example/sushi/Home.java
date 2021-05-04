@@ -1,12 +1,12 @@
 package com.example.sushi;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import com.example.sushi.databinding.ActivityHomeBinding ;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+import com.example.sushi.databinding.ActivityHomeBinding;
 public class Home extends AppCompatActivity {
 ActivityHomeBinding binding;
     @Override
