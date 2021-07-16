@@ -1,14 +1,13 @@
 package com.example.sushi;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import android.content.Intent;
-import android.os.Bundle;
-
 import com.example.sushi.databinding.ActivityMainBinding;
-
-import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
     /**

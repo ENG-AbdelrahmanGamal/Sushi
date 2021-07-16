@@ -74,13 +74,15 @@
         <RelativeLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_200sdp"
+            android:layout_height="@dimen/_300sdp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="92dp"
-            tools:layout_editor_absoluteY="-4dp">
+            tools:layout_editor_absoluteY="-300dp"
+
+            >
 
 
             <ImageView
@@ -88,7 +90,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/_0210506_005513" />
+                tools:layout_editor_absoluteY="-300dp"
+                android:src="@drawable/layer_2_copy_5" />
         </RelativeLayout>
 
         <com.google.android.material.textview.MaterialTextView
@@ -170,7 +173,7 @@
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_100sdp"
             android:src="@drawable/_3844663_1341563935951986_5009827124644450409_n"
-
+            android:elevation="@dimen/_30sdp"
             app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.449"

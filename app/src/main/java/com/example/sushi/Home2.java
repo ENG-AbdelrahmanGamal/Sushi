@@ -35,8 +35,7 @@ navigationView=binding.navigationView;
 toolbar=binding.toolsbar;
 //   *************************** Navigation Drawer ***************************
         navigationView.bringToFront();
-ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(this,
-        drawerLayout,toolbar,R.string.navigaton_open,R.string.navigaton_close);
+ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.navigaton_open,R.string.navigaton_close);
 drawerLayout.addDrawerListener(toggle);
 toggle.syncState();
 navigationView.setNavigationItemSelectedListener(this);

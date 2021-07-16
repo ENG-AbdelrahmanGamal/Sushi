@@ -10,11 +10,25 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         tools:context=".Restaurant">
-
-
-
-
+<fragment
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            app:cornerRadius="@dimen/_200sdp"
+            android:text="get Direction"
+            android:onClick="confirmLocation"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:elevation="@dimen/_3sdp"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
